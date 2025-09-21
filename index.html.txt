@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Auth Redirect</title>
+    <script>
+      window.onload = function () {
+        const params = window.location.search;
+        // ✅ رجع التوكن للتطبيق عن طريق الـ deep link
+        window.location.href = "com.example.hardinnn://login-callback" + params;
+      };
+    </script>
+  </head>
+  <body>
+    <h2>Redirecting...</h2>
+  </body>
+</html>
